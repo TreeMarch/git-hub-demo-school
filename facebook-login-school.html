@@ -4,43 +4,100 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .Sign-up {
+        margin-bottom: 20px;
+      }
+      h1 {
+        margin-bottom: 0;
+      }
+      body {
+        height: 100vh;
+        background-color: rgb(220, 213, 213);
+      }
+      .main-wrapper {
+        width: 500px;
+        height: auto;
+        margin: 0 auto;
+        background-color: #8080804a;
+        padding: 15px;
+        border-radius: 6px;
+      }
+      input {
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 6px;
+        outline: 0;
+        border: 0;
+      }
+      .Create-acc {
+        background-color: rgb(66, 174, 66);
+        color: #fff;
+        padding: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        width: 165px;
+      }
+      .link-facebook {
+        text-decoration: none;
+        color: red;
+      }
+      .link-facebook:hover {
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
-    <h1>Sign Up</h1>
-    <span>It's free and always will be</span>
+    <div class="main-wrapper">
+      <div class="Sign-up">
+        <h1>Sign Up</h1>
+        <span>It's free and always will be</span>
+      </div>
 
-    <form action="">
-      <input
-        type="text"
-        name="firstname"
-        id="First-name"
-        placeholder="Firstname"
-      />
-      <input type="text" placeholder="Surname" /> <br />
-      <input
-        type="text"
-        id="phone-email"
-        placeholder="Phone number or email address"
-      />
-      <br />
-      <input type="text" placeholder="ReEenter phone number or email address" />
-      <br />
-      <input type="text" name="" id="" placeholder="New Password" />
+      <form action="">
+        <input
+          type="text"
+          name="firstname"
+          class="First-name"
+          placeholder="Firstname"
+        />
+        <input class="surname" type="text" placeholder="Surname" /> <br />
+        <input
+          type="text"
+          class="phone-email"
+          placeholder="Phone number or email address"
+        />
+        <br />
+        <input
+          type="text"
+          placeholder="ReEenter phone number or email address"
+          class="reset-infor"
+        />
+        <br />
+        <input
+          type="password"
+          name=""
+          id="new-pass"
+          placeholder="New Password"
+        />
 
-      <h2>Birth day</h2>
-      <input type="date" />
-      <span>why do i need provide my date of birth ?</span>
-      <br />
-      <input type="radio" value="Male" />Male
-      <input type="radio" value="Female" />Female
-      <img
-        style="cursor: pointer; width: 200px; height: 200px"
-        title="logo-page"
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png"
-        alt="hinh anh"
-      />
-      <br />
-      <input type="submit" value="Create account" />
-    </form>
+        <h2>Birth day</h2>
+        <input type="date" />
+        <a style="text-decoration: none; color: red" href="#"
+          >why do i need provide my date of birth ?</a
+        >
+        <br />
+        <input type="radio" value="Male" />Male
+        <input type="radio" value="Female" />Female
+        <br />
+        <p class="rule" style="font-size: 14px">
+          By clicking Sign up, you agree to our
+          <a class="link-facebook" href="#">Terms</a>and that you have read our
+          <a class="link-facebook" href="">Data Policy</a>,including our
+          <a class="link-facebook" href="#">Cooking use</a>
+        </p>
+        <input class="Create-acc" type="submit" value="Sign-up" />
+      </form>
+    </div>
   </body>
 </html>
